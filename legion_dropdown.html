@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Legion Brothers</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      padding: 0;
+    }
+
+    .legion-container {
+      text-align: center;
+      font-family: 'Times New Roman', serif;
+      width: 100%;
+      max-width: none;
+      position: relative;
+    }
+
+    .dropbtn {
+      color: white;
+      background-color: transparent;
+      padding: 4px 16px;
+      font-size: 20px;
+      border: none;
+      font-family: 'Times New Roman', serif;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      text-decoration: none;
+    }
+
+    .arrow {
+      display: inline-block;
+      transition: transform 0.3s ease;
+      font-weight: normal;
+      font-size: 18px;
+      user-select: none;
+      transform-origin: center;
+    }
+
+    .legion-list {
+      display: none;
+      background-color: transparent;
+      margin-top: 10px;
+      font-size: 14pt;
+      text-align: left;
+      width: 100vw;
+      max-width: 100vw;
+      padding-left: 20px;
+      padding-right: 20px;
+      box-sizing: border-box;
+      position: relative;
+      left: 50%;
+      right: 50%;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      z-index: 1000;
+    }
+
+    .legion-list a {
+      display: block;
+      color: white !important;
+      padding: 8px 0;
+      text-decoration: none !important;
+      font-family: 'Times New Roman', serif;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .legion-list a:hover {
+      font-weight: bold;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="legion-container">
+    <button class="dropbtn" onclick="toggleLegionList()">
+      LEGION BROTHERS
+      <span id="toggleArrow" class="arrow">▾</span>
+    </button>
+    <div id="legionList" class="legion-list">
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=mPtpLdYlZPbURAfm&book=Dark%20Legion%20Brothers">1 DARK LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=pbM-JntCWUoKfBSr&book=Hydra%20Legion%20Brothers">2 HYDRA LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=7xDggiEdzZUD3V_3&book=Flawless%20Legion%20Brothers">3 FLAWLESS LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=_UOmJ7JIKJUBkZ1Y&book=Devourer%20Legion%20Brothers">4 DEVOURER LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=KXNBLaEFYMygUtO-&book=Word%20Legion%20Brothers">5 WORD LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=RBFH3kGPYPBoKPUe&book=Iron%20Warriors%20Legion%20Brothers">6 IRON WARRIORS LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=_Zpcrd36QdLYCp1f&book=Night%20Legion%20Brothers">7 NIGHT LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=gtb4NvAbl9mw3w6P&book=Old%20Custodian%20Brothers">8 OLD CUSTODIAN BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=WTyMkU2uFtRRyc5n&book=Blood%20Legion%20Brothers">9 BLOOD LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=smzMOAGlTSe5q3a9&book=Thousand%20Legion%20Brothers">10 THOUSAND LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=pyFocRnkEJ4LslRD&book=Medusa%20Legion%20Brothers">11 MEDUSA LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=ZcQoP7C5eF-Q6_HY&book=Scarred%20Legion%20Brothers">12 SCARRED LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=cAfKkK4leHd7R9Oj&book=Imperial%20Legion%20Brothers">13 IMPERIAL LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=99b5W7KDYh6aWYAr&book=Ultralegion%20Brothers">14 ULTRA LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=W5XZ6qRZC0HkxkEG&book=Fire%20Legion%20Brothers">15 FIRE LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=8zY_MZFSpnXCH3qD&book=Raven%20Legion%20Brothers">16 RAVEN LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=KHjcFUZh65yQvKJj&book=Wolf%20Legion%20Brothers">17 WOLF LEGION BROTHERS</a>
+      <a href="https://army-forge.onepagerules.com/armyInfo?gameSystem=3&armyId=6eEZoAnOxWsyPWh1&book=Uncrowned%20Legion%20Brothers">18 UNCROWNED LEGION BROTHERS</a>
+    </div>
+  </div>
+
+  <script>
+    function toggleLegionList() {
+      var list = document.getElementById("legionList");
+      var arrow = document.getElementById("toggleArrow");
+      if (list.style.display === "block") {
+        list.style.display = "none";
+        arrow.style.transform = "rotate(0deg)";
+      } else {
+        list.style.display = "block";
+        arrow.style.transform = "rotate(-90deg)";
+      }
+    }
+  </script>
+</body>
+</html>
